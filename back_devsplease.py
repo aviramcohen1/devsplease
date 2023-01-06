@@ -11,7 +11,7 @@ def extract_names_from_excel_file():
     The function extract names from excel file
     :return:
     '''
-    df_names = pd.read_excel(r'C:\Users\Avira\Desktop\israel_names.xlsx')
+    df_names = pd.read_excel(r'israel_names.xlsx')
     df_names = df_names['Column3']
     list_names = df_names.values.tolist()
     return list_names
